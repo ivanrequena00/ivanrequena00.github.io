@@ -67,22 +67,64 @@
 
         <div class="card card-body bg-light">
             <h2 id="tcp_acceso">Capa de Acceso a la red </h2>
-            <p>Texto... </p>
+            <p>Dentro de la Capa de Acceso a la red hay dos partes:</p>
+            <h5>Capa de enlace</h5>
+            <ul> 
+              <li>La unidad de datos se llama marco o trama</li>
+              <li>El protocolo mas usado es Ethernet</li>
+              <li>Controla flujo de datos entre dos nodos directamente conectados</li>
+              <li>Se hace un direccionamiento de los datos en la red (LAN)</li>
+              <li>Existen otros como: PPP, ATM, Frame, Relay...</li>
+            </ul>
+            <h5>Capa física</h5>
+            <ul> 
+              <li>Transforma ls bytes al medio físico en bits y viceversa</li>
+              <li>Debe conocer la características eléctricas, funcionales, mecánicas...</li>
+            </ul>
+
         </div>
 
         <div class="card card-body bg-light">
             <h2 id="tcp_red">Capa de Internet (red) </h2>
-            <p>Texto... </p>
+            <ul> 
+              <li>La unidad de datos se llama paquete o datagrama</li>
+              <li>Encauza los datos hasta su luga de destino</li>
+              <li>Establece diálogo para encontrr la mejor ruta</li>
+              <li>De implementa en todos los sistemas: finales e intermedios</li>
+            </ul>
         </div>
 
         <div class="card card-body bg-light">
             <h2 id="tcp_transporte">Capa de Transporte </h2>
-            <p>Texto... </p>
+            <ul> 
+              <li>La unidad de datos se llama segmentos</li>
+              <li>Aceptar los datos enviados por las capas superiores, dividirlos en pequeñas partes y pasarlos a la capa de Red</li>
+              <li>Se implementa en los sistemas finales, pero no en los routers de la red</li>
+              <li>Controla el flujo de datos: envío y recepción de datos, no errores, ordenados y sin duplcados</li>
+              <li>Servicios fiables orientados a conexión: se entrega todo y en orden</li>
+              <li>Servicios no orientados a conexión: no se garantiza lo anterior</li>
+            </ul>
         </div>
 
         <div class="card card-body bg-light">
             <h2 id="tcp_aplicacion">Capa de Aplicación </h2>
-            <p>Texto... </p>
+            <ul> 
+              <li>El nivel mas cercano al usuario</li>
+              <li>Tratan aspectos tales como la semántica y la sintaxis de los datos transmitidos, ya que distiantas computadoras pueden tener diferentes formas de manejarlas</li>
+              <li>Ejemplos de protocolos
+                <ul>
+                  <li>Http: (HiperText Transfer Protocol) Protocolo de la web</li>
+                  <li>FTP: (File Transfer Protocol) Tranferencia de ficheros</li>
+                  <li>SMTP: (Simple Mail Transfer Protocol) Envío y distribución de correo electrónico</li>
+                  <li>POP: (Post Office Protocol) Reparto de correo</li>
+                  <li>IMAP: Reparto de correo al usuario final</li>
+                  <li>SSH: (Secure shell) Terminal remoto, aunque en realidad cifra casi cualquier tipo de transmisión</li>
+                  <li>Telnet: Terminal remoto, ha caido en deshuso por su inseguridad intrínseca, ya que las claves viajen sin cifrar por la red</li>
+                  <li>DHCP: (Dinamic Host Configuration Protocol) Configuración dinámica de host</li>
+                  <li>DNS: (Domain Name System) Resolución de nombres e IPs</li>
+                </ul>
+              </li>
+            </ul>
         </div>
 
       </div>
